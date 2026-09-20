@@ -1,3 +1,5 @@
-const Arrow = () => { return <span aria-hidden="true">↗</span> }
+const Arrow = () => {
+  return <span aria-hidden="true">↗</span>;
+};
 
-export default Arrow
+export default Arrow;

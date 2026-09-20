@@ -1,10 +1,12 @@
 interface SectionLabelProps {
-  number: string
-  children: string
+  number: string;
+  children: string;
 }
 
 const SectionLabel = ({ number, children }: SectionLabelProps) => (
-  <h2 className="section-label"><span>{number}</span>{' '}{children}</h2>
-)
+  <h2 className="section-label">
+    <span>{number}</span> {children}
+  </h2>
+);
 
-export default SectionLabel
+export default SectionLabel;

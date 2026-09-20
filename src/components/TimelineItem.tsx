@@ -1,10 +1,15 @@
 interface TimelineItemProps {
-  date: string
-  title: string
-  organization: string
-  description: string
+  date: string;
+  title: string;
+  organization: string;
+  description: string;
 }
-const TimelineItem = ({ date, title, organization, description }: TimelineItemProps) => {
+const TimelineItem = ({
+  date,
+  title,
+  organization,
+  description,
+}: TimelineItemProps) => {
   return (
     <article>
       <div>
@@ -14,7 +19,7 @@ const TimelineItem = ({ date, title, organization, description }: TimelineItemPr
       </div>
       <p>{description}</p>
     </article>
-  )
-}
+  );
+};
 
-export default TimelineItem
+export default TimelineItem;
