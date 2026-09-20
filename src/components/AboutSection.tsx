@@ -1,12 +1,11 @@
+import ProfilePhoto from "./ProfilePhoto";
 import SectionLabel from "./SectionLabel";
 const AboutSection = () => {
   return (
     <section id="about" className="about wrap section">
       <SectionLabel number="01">About Me</SectionLabel>
-      <div>
-        {/* <h1>Learning how things think.<br />
-        <span className="muted">Understanding how they connect.</span>
-      </h1> */}
+      <div className="about-introduction">
+        <ProfilePhoto />
         <div className="about-body">
           <p>
             I’m pursuing a B.S. in Computer Science at Georgia Tech,

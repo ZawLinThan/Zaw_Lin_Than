@@ -1,24 +1,14 @@
+import { skillGroups } from '../data/skills';
+import SkillMarquee from './SkillMarquee';
+import SkillCategory from './SkillCategory';
 import SectionLabel from "./SectionLabel";
 const SkillsSection = () => {
   return (
     <section id="skills" className="skills wrap section">
       <SectionLabel number="03">Toolkit</SectionLabel>
-      <div className="skill-grid">
-        <div>
-          <h3>Programming Languages</h3>
-          <p>Python · C++ / C · Java · JavaScript · TypeScript · SQL</p>
-        </div>
-        <div>
-          <h3>AI & data</h3>
-          <p>Scikit-learn · Pandas · NumPy · Jupyter · Matplotlib</p>
-        </div>
-        <div>
-          <h3>Web & infrastructure</h3>
-          <p>
-            React · Node.js · Next.js · TanStack Query · Zustand · PostgreSQL ·
-            Drizzle ORM · Firebase · Git
-          </p>
-        </div>
+      <SkillMarquee skills={skillGroups.flatMap(group => group.skills)} />
+      <div className="skill-categories">
+        {skillGroups.map(group => <SkillCategory key={group.title} {...group} fullWidth={group.title === 'Programming Languages'} />)}
       </div>
       <div className="coursework">
         <h3>Completed Coursework</h3>

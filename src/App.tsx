@@ -7,6 +7,7 @@ import ProjectDetailPage from "./pages/ProjectDetailPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import SkillsPage from "./pages/SkillsPage";
 import "./App.css";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <Route element={<SiteLayout />}>
         <Route index element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />
+        <Route path="skills" element={<SkillsPage />} />
         <Route path="projects" element={<ProjectsPage />} />
         <Route path="projects/:slug" element={<ProjectDetailPage />} />
         <Route path="experience" element={<ExperiencePage />} />

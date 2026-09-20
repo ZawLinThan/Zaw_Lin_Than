@@ -10,6 +10,7 @@ const Header = () => {
           ["/", "Home"],
           ["/about", "About"],
           ["/projects", "Projects"],
+          ["/skills", "Skills"],
           ["/experience", "Experience"],
           ["/contact", "Contact"],
         ].map(([to, label]) => (

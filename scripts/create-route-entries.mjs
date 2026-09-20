@@ -7,6 +7,7 @@ const slugs = [...projectSource.matchAll(/slug:\s*["']([^"']+)["']/g)].map(
 );
 const routes = [
   "about",
+  "skills",
   "projects",
   "experience",
   "contact",
