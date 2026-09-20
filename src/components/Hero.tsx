@@ -5,6 +5,7 @@ const Hero = () => {
     <section className="hero wrap">
       <div>
         <p className="hero-kicker"><span aria-hidden="true">~/</span> ZAW LIN THAN · DEVELOPER PORTFOLIO</p>
+        <p className="terminal-command"><span aria-hidden="true">❯</span> whoami</p>
         <h1>
           Hi, I’m
           <br />
@@ -23,7 +24,7 @@ const Hero = () => {
         <HomeActions />
       </div>
       <aside className="profile-panel">
-        <div className="panel-titlebar"><span className="panel-dots" aria-hidden="true"><i /><i /><i /></span><span>developer.profile</span><span aria-hidden="true">{"{ }"}</span></div>
+        <div className="panel-titlebar"><span className="panel-dots" aria-hidden="true"><i /><i /><i /></span><span>developer.ts</span><span aria-hidden="true">{"{ }"}</span></div>
         <span className="availability">● Open to internships & co-ops</span>
         <dl>
           <div>
@@ -31,7 +32,7 @@ const Hero = () => {
             <dd>Georgia Institute of Technology</dd>
           </div>
           <div>
-            <dt> Degree and Concentration</dt>
+            <dt> Major </dt>
             <dd> Computer Science</dd>
           </div>
           <div>

@@ -4,14 +4,14 @@ import Arrow from "./Arrow";
 const ContactSection = () => {
   return (
     <section id="opportunities" className="opportunities wrap">
-      <SectionLabel number="06">Let’s Connect</SectionLabel>
+      <SectionLabel number="06">Contact Me</SectionLabel>
       <div className="opportunities-content">
         <div>
           <div className="availability">
             <i /> SEEKING INTERNSHIPS & CO-OPS
           </div>
           <h1>
-            Ready to learn and contribute<span className="accent">.</span>
+            Let's work together<span className="accent">.</span>
           </h1>
         </div>
         <p>
