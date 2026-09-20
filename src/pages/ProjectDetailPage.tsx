@@ -6,16 +6,20 @@ import ProjectGallery from '../components/ProjectGallery'
 import SectionHeading from '../components/SectionHeading'
 import PageMeta from '../components/PageMeta'
 import NotFoundPage from './NotFoundPage'
+
 const ProjectDetailPage = () => {
-  const { slug } = useParams()
-  const project = projects.find(item => item.slug === slug)
+  const { slug } = useParams();
+  const project = projects.find(item => item.slug === slug);
+
   if (!project) return <NotFoundPage />
+
   return <article className="wrap page">
     <PageMeta title={project.title} description={project.summary} />
     <Link className="back-link" to="/projects">← All projects</Link>
     <SectionHeading label={project.category} title={project.title}>
       <p>{project.summary}</p>
     </SectionHeading>
+    
     <div className="detail-grid">
       <div>
         <section className="detail-section">

@@ -33,7 +33,7 @@ const FocusSection = () => {
           <span>Information networks</span>
         </div>
       </article>
-      <a href="https://www.cc.gatech.edu/threads-better-way-learn-computing" className="text-link">More Information on Threads ↗</a>
+      <a href="https://www.cc.gatech.edu/threads-better-way-learn-computing" className="text-link" target='_blank'>More Information on Threads ↗</a>
     </div>
   </section>
 }

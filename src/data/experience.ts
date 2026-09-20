@@ -9,13 +9,13 @@ export const leadership = [
     "date": "FEB 2025 \u2014 JUN 2026",
     "title": "Vice President of Scholarship",
     "organization": "Phi Theta Kappa \u00b7 Santa Monica College",
-    "description": "Revived the chapter tutoring program with seven tutors and coordinated scholarship workshops."
+    "description": "Revived the chapter tutoring program with seven tutors and coordinated scholarship workshops and events that foster academic excellence."
   },
   {
     "date": "SEP 2025 \u2014 JAN 2026",
     "title": "Research Project Lead",
     "organization": "Phi Theta Kappa \u00b7 Honors in Action",
-    "description": "Directed a multidisciplinary team of four through the research project cycle, achieving third place in the Nevada/California region."
+    "description": "Directed a multidisciplinary team of four t hrough the research project cycle, achieving third place in the Nevada/California region."
   },
   {
     "date": "MAR 2025 \u2014 JUN 2025",
