@@ -1090,3 +1090,6 @@ body {
 .language-list dd { margin: 0; padding: 5px 10px; border: 1px solid #6de0e430; border-radius: 4px; color: var(--cyan); background: #6de0e409; font: .875rem/1.5 var(--mono); }
 @media (max-width: 950px) { .background-panels { grid-template-columns: 1fr; } }
 @media (max-width: 440px) { .background-panel { padding: 20px; } .background-panel-heading h2 { font-size: 1.3rem; } }
+
+/* Keep the official gray Drizzle mark legible on its light icon tile. */
+.skill-symbol img[src="/skill-icons/drizzle.svg"] { filter: brightness(.35); }
