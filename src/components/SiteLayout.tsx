@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
-export default function SiteLayout() {
+const SiteLayout = () => {
   const { pathname } = useLocation()
   const main = useRef<HTMLElement>(null)
   useEffect(() => {
@@ -18,3 +18,5 @@ export default function SiteLayout() {
     <Footer />
   </>
 }
+
+export default SiteLayout

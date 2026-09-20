@@ -1,7 +1,7 @@
-export default function SkillsSection() {
+const SkillsSection = () => {
   return <section id="skills" className="skills wrap section">
-    <div className="section-label">
-      <span>03</span> TOOLKIT</div>
+    <h1 className="section-label">
+      <span>03</span> TOOLKIT</h1>
     <h2>What I work with</h2>
     <div className="skill-grid">
       <div>
@@ -23,3 +23,5 @@ export default function SkillsSection() {
     </div>
   </section>
 }
+
+export default SkillsSection

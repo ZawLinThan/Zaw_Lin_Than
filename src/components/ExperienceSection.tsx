@@ -1,11 +1,11 @@
 import { experience } from '../data/experience'
 import TimelineItem from './TimelineItem'
-export default function ExperienceSection() {
+const ExperienceSection = () => {
   return <section id="experience" className="experience wrap section">
     <div className="section-heading">
       <div>
-        <div className="section-label">
-          <span>04</span> EXPERIENCE & LEADERSHIP</div>
+        <h1 className="section-label">
+          <span>04</span> EXPERIENCE & LEADERSHIP</h1>
         <h1>Building with people.</h1>
       </div>
     </div>
@@ -24,3 +24,5 @@ export default function ExperienceSection() {
     </div>
   </section>
 }
+
+export default ExperienceSection

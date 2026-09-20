@@ -9,7 +9,7 @@ import ContactPage from './pages/ContactPage'
 import NotFoundPage from './pages/NotFoundPage'
 import './App.css'
 
-export default function App() {
+const App = () => {
   return (
     <Routes>
       <Route element={<SiteLayout />}>
@@ -24,3 +24,5 @@ export default function App() {
     </Routes>
   )
 }
+
+export default App

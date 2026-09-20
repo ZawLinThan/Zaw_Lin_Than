@@ -1,20 +1,14 @@
+import HomeActions from './HomeActions'
 import { Link } from 'react-router-dom'
-export default function Hero() {
+const Hero = () => {
   return <section className="hero wrap">
     <div>
       <h1>Hi, I’m<br />Zaw Lin Than<span className="accent">.</span>
       </h1>
       <p className="hero-lead">Building intelligent tools.<br />Connecting ideas to reality.</p> {/* Need to think if to remove or not */}
       <p className="hero-description">I build AI tools and full-stack applications.</p> {/* Add some info to this sentence*/}
-      <div className="actions">
-        <Link className="button" to="/projects">Explore my projects ↗</Link>
-        <a className="text-link" href="/Zaw-Lin-Than-Resume.pdf" download>Download résumé ↓</a>
-      </div>
+      <HomeActions />
 
-      <div className='actions'>
-        <a className="text-link" href="www.linkedin.com/in/zaw-lin-than-88541b192"> My LinkedIn</a>
-        <a className="text-link" href="https://github.com/ZawLinThan"> My GitHub</a>
-      </div>
     </div>
     <aside className="profile-panel">
       <span className="availability">● Open to internships & co-ops</span>
@@ -48,3 +42,5 @@ export default function Hero() {
     </aside>
   </section>
 }
+
+export default Hero

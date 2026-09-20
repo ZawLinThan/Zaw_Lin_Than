@@ -1,7 +1,7 @@
-export default function AboutSection() {
+const AboutSection = () => {
   return <section id="about" className="about wrap section">
-    <div className="section-label">
-      <span>01</span> ABOUT ME</div>
+    <h1 className="section-label">
+      <span>01</span> ABOUT ME</h1>
     <div>
       {/* <h1>Learning how things think.<br />
         <span className="muted">Understanding how they connect.</span>
@@ -14,3 +14,5 @@ export default function AboutSection() {
     </div>
   </section>
 }
+
+export default AboutSection

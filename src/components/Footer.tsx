@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-export default function Footer() {
+const Footer = () => {
   return <footer className="site-footer wrap">
     <Link className="wordmark" to="/">ZLT<span>.</span>
     </Link>
@@ -8,3 +8,5 @@ export default function Footer() {
     <a href="mailto:zthan3@gatech.edu">Email ↗</a>
   </footer>
 }
+
+export default Footer

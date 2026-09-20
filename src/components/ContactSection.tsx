@@ -1,9 +1,9 @@
 import Arrow from './Arrow'
 
-export default function ContactSection() {
+const ContactSection = () => {
   return <section id="opportunities" className="opportunities wrap">
-    <div className="section-label">
-      <span>06</span> LET’S CONNECT</div>
+    <h1 className="section-label">
+      <span>06</span> LET’S CONNECT</h1>
     <div className="opportunities-content">
       <div>
         <div className="availability">
@@ -24,3 +24,5 @@ export default function ContactSection() {
     <p className="spoken-languages">English & Mandarin — proficient · Burmese — native</p>
   </section>
 }
+
+export default ContactSection

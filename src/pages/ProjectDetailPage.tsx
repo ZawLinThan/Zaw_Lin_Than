@@ -6,7 +6,7 @@ import ProjectGallery from '../components/ProjectGallery'
 import SectionHeading from '../components/SectionHeading'
 import PageMeta from '../components/PageMeta'
 import NotFoundPage from './NotFoundPage'
-export default function ProjectDetailPage() {
+const ProjectDetailPage = () => {
   const { slug } = useParams()
   const project = projects.find(item => item.slug === slug)
   if (!project) return <NotFoundPage />
@@ -44,3 +44,5 @@ export default function ProjectDetailPage() {
     <ProjectGallery screenshots={project.screenshots} />
   </article>
 }
+
+export default ProjectDetailPage

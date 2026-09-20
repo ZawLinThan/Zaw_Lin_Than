@@ -1,9 +1,9 @@
-export default function FocusSection() {
+const FocusSection = () => {
   return <section id="focus" className="focus wrap section">
     <div className="section-heading">
       <div>
-        <div className="section-label">
-          <span>02</span> AREAS OF FOCUS</div>
+        <h1 className="section-label">
+          <span>02</span> AREAS OF FOCUS</h1>
         <h2>Two threads as connected concentration.</h2>
       </div>
     </div>
@@ -37,3 +37,5 @@ export default function FocusSection() {
     </div>
   </section>
 }
+
+export default FocusSection

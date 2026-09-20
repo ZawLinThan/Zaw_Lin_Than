@@ -3,7 +3,7 @@ import Hero from '../components/Hero'
 import ProjectGrid from '../components/ProjectGrid'
 import PageMeta from '../components/PageMeta'
 import { projects } from '../data/projects'
-export default function HomePage() {
+const HomePage = () => {
   return <>
     <PageMeta title="Computer Science at Georgia Tech" description="AI and full-stack projects by Zaw Lin Than. Seeking internships and co-ops." />
     <Hero />
@@ -18,3 +18,5 @@ export default function HomePage() {
     </section>
   </>
 }
+
+export default HomePage

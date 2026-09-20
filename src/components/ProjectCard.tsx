@@ -4,7 +4,7 @@ import StatusBadge from './StatusBadge'
 import TechStack from './TechStack'
 import Arrow from './Arrow'
 
-export default function ProjectCard({ project, index }: { project: Project; index: number }) {
+const ProjectCard = ({ project, index }: { project: Project; index: number }) => {
   return <Link className="project-card" to={`/projects/${project.slug}`} aria-label={`View ${project.title} project`}>
     <div className="card-top">
       <span className="project-number">{String(index + 1).padStart(2, '0')}</span>
@@ -18,3 +18,5 @@ export default function ProjectCard({ project, index }: { project: Project; inde
     </span>
   </Link>
 }
+
+export default ProjectCard

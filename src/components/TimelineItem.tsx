@@ -4,7 +4,7 @@ interface TimelineItemProps {
   organization: string
   description: string
 }
-export default function TimelineItem({ date, title, organization, description }: TimelineItemProps) {
+const TimelineItem = ({ date, title, organization, description }: TimelineItemProps) => {
   return (
     <article>
       <div>
@@ -16,3 +16,5 @@ export default function TimelineItem({ date, title, organization, description }:
     </article>
   )
 }
+
+export default TimelineItem
