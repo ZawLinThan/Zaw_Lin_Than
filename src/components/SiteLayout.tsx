@@ -10,11 +10,11 @@ export default function SiteLayout() {
     main.current?.focus({ preventScroll: true })
   }, [pathname])
   return <>
-<a className="skip-link" href="#main">Skip to content</a>
-<Header />
-<main id="main" ref={main} tabIndex={-1}>
-<Outlet />
-</main>
-<Footer />
-</>
+    <a className="skip-link" href="#main">Skip to content</a>
+    <Header />
+    <main id="main" ref={main} tabIndex={-1}>
+      <Outlet />
+    </main>
+    <Footer />
+  </>
 }

@@ -1,36 +1,50 @@
 import { Link } from 'react-router-dom'
 export default function Hero() {
   return <section className="hero wrap">
-<div>
-<p className="eyebrow">COMPUTER SCIENCE / GEORGIA TECH</p>
-<h1>Hi, I’m<br />Zaw Lin Than<span className="accent">.</span>
-</h1>
-<p className="hero-lead">Building intelligent tools.<br />Connecting ideas to reality.</p>
-<p className="hero-description">I build AI tools and full-stack applications, with a focus on Artificial Intelligence and Information Internetworks.</p>
-<div className="actions">
-<Link className="button" to="/projects">Explore my projects ↗</Link>
-<a className="text-link" href="/Zaw-Lin-Than-Resume.pdf" download>Download résumé ↓</a>
-</div>
-</div>
-<aside className="profile-panel">
-<span className="availability">● Open to internships & co-ops</span>
-<div className="profile-monogram" aria-hidden="true">ZLT<span>_</span>
-</div>
-<dl>
-<div>
-<dt>Education</dt>
-<dd>Georgia Institute of Technology</dd>
-</div>
-<div>
-<dt>Graduation</dt>
-<dd>Expected May 2028</dd>
-</div>
-<div>
-<dt>Based in</dt>
-<dd>Atlanta, Georgia</dd>
-</div>
-</dl>
-<Link to="/about" className="text-link">More about me ↗</Link>
-</aside>
-</section>
+    <div>
+      <h1>Hi, I’m<br />Zaw Lin Than<span className="accent">.</span>
+      </h1>
+      <p className="hero-lead">Building intelligent tools.<br />Connecting ideas to reality.</p> {/* Need to think if to remove or not */}
+      <p className="hero-description">I build AI tools and full-stack applications.</p> {/* Add some info to this sentence*/}
+      <div className="actions">
+        <Link className="button" to="/projects">Explore my projects ↗</Link>
+        <a className="text-link" href="/Zaw-Lin-Than-Resume.pdf" download>Download résumé ↓</a>
+      </div>
+
+      <div className='actions'>
+        <a className="text-link" href="www.linkedin.com/in/zaw-lin-than-88541b192"> My LinkedIn</a>
+        <a className="text-link" href="https://github.com/ZawLinThan"> My GitHub</a>
+      </div>
+    </div>
+    <aside className="profile-panel">
+      <span className="availability">● Open to internships & co-ops</span>
+      <dl>
+        <div>
+          <dt>Education</dt>
+          <dd>Georgia Institute of Technology</dd>
+        </div>
+        <div>
+          <dt> Degree and Concentration</dt>
+          <dd> Computer Science</dd>
+        </div>
+        <div>
+          <dt> Concentration</dt>
+          <dd> Artificial Intelligence & Information Internetwork</dd>
+        </div>
+        <div>
+          <dt> Student Status</dt>
+          <dd> Junior </dd>
+        </div>
+        <div>
+          <dt>Graduation</dt>
+          <dd>Expected May 2028</dd>
+        </div>
+        <div>
+          <dt>Based in</dt>
+          <dd>Atlanta, Georgia</dd>
+        </div>
+      </dl>
+      <Link to="/about" className="text-link">More about me ↗</Link>
+    </aside>
+  </section>
 }
