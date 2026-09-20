@@ -2,7 +2,7 @@ import { readFile, mkdir, writeFile } from "node:fs/promises";
 
 // Explicit HTML entries make direct visits and refreshes work on static hosting.
 const projectSource = await readFile("src/data/projects.ts", "utf8");
-const slugs = [...projectSource.matchAll(/slug: '([^']+)'/g)].map(
+const slugs = [...projectSource.matchAll(/slug:\s*["']([^"']+)["']/g)].map(
   (match) => match[1],
 );
 const routes = [

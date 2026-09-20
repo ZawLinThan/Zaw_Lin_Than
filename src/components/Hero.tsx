@@ -4,6 +4,7 @@ const Hero = () => {
   return (
     <section className="hero wrap">
       <div>
+        <p className="hero-kicker"><span aria-hidden="true">~/</span> ZAW LIN THAN · DEVELOPER PORTFOLIO</p>
         <h1>
           Hi, I’m
           <br />
@@ -22,6 +23,7 @@ const Hero = () => {
         <HomeActions />
       </div>
       <aside className="profile-panel">
+        <div className="panel-titlebar"><span className="panel-dots" aria-hidden="true"><i /><i /><i /></span><span>developer.profile</span><span aria-hidden="true">{"{ }"}</span></div>
         <span className="availability">● Open to internships & co-ops</span>
         <dl>
           <div>
