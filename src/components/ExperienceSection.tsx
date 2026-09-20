@@ -1,7 +1,6 @@
 import { experience } from '../data/experience'
 import TimelineItem from './TimelineItem'
 import SectionLabel from './SectionLabel'
-import HonorsSection from './HonorsSection'
 
 const ExperienceSection = () => (
   <section id="experience" className="experience wrap section">
@@ -9,7 +8,6 @@ const ExperienceSection = () => (
     <div className="timeline">
       {experience.map(item => <TimelineItem key={item.title} {...item} />)}
     </div>
-    <HonorsSection />
   </section>
 )
 

@@ -1,7 +1,9 @@
+import SectionLabel from "./SectionLabel"
+
 const HonorsSection = () => (
+  <section id="experience" className="experience wrap section">
+    <SectionLabel number="06"> Honors & Awards </SectionLabel>
     <div className="honors">
-      <h3>Honors & awards <span className="accent">↗</span>
-      </h3>
       <ul>
         <li>3rd Place, Honors in Action Research Project <span>Phi Theta Kappa · NV/CA Region · 2026</span>
         </li>
@@ -11,6 +13,7 @@ const HonorsSection = () => (
         </li>
       </ul>
     </div>
+  </section>
 )
 
 export default HonorsSection

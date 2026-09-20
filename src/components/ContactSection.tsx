@@ -21,7 +21,6 @@ const ContactSection = () => {
       </a>
       <a href="/Zaw-Lin-Than-Resume.pdf" download>Download résumé ↓</a>
     </div>
-    <p className="spoken-languages">English & Mandarin — proficient · Burmese — native</p>
   </section>
 }
 

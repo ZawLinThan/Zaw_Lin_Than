@@ -2,10 +2,9 @@ import SectionLabel from './SectionLabel'
 const SkillsSection = () => {
   return <section id="skills" className="skills wrap section">
     <SectionLabel number="03">Toolkit</SectionLabel>
-    <h2>What I work with</h2>
     <div className="skill-grid">
       <div>
-        <h3>Languages</h3>
+        <h3>Programming Languages</h3>
         <p>Python · C++ / C · Java · JavaScript · TypeScript · SQL</p>
       </div>
       <div>
@@ -20,6 +19,10 @@ const SkillsSection = () => {
     <div className="coursework">
       <h3>Completed Coursework</h3>
       <p>Data Structures & Algorithms · Linear Algebra · Discrete Math · Multivariable Calculus · Digital System Design</p>
+    </div>
+    <div className='coursework'>
+      <h3> Spoken Languages </h3>
+      <p> English & Mandarin — proficient · Burmese — native </p>
     </div>
   </section>
 }
