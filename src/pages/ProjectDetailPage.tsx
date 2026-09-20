@@ -13,7 +13,7 @@ const ProjectDetailPage = () => {
 
   if (!project) return <NotFoundPage />
 
-  return <article className="wrap page">
+  return <article className="wrap page project-detail-page">
     <PageMeta title={project.title} description={project.summary} />
     <Link className="back-link" to="/projects">← All projects</Link>
     <SectionHeading label={project.category} title={project.title}>
