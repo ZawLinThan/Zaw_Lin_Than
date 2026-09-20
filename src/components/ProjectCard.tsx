@@ -17,7 +17,13 @@ const ProjectCard = ({
       to={`/projects/${project.slug}`}
       aria-label={`View ${project.title} project`}
     >
-      <div className="project-filebar"><span aria-hidden="true">⌘</span><span>{project.slug}</span><span className="filebar-arrow" aria-hidden="true">↗</span></div>
+      <div className="project-filebar">
+        <span aria-hidden="true">⌘</span>
+        <span>{project.slug}</span>
+        <span className="filebar-arrow" aria-hidden="true">
+          ↗
+        </span>
+      </div>
       <div className="card-top">
         <span className="project-number">
           {String(index + 1).padStart(2, "0")}

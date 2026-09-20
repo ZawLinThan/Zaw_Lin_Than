@@ -4,7 +4,9 @@ const Hero = () => {
   return (
     <section className="hero wrap">
       <div>
-        <p className="terminal-command"><span aria-hidden="true">❯</span> whoami</p>
+        <p className="terminal-command">
+          <span aria-hidden="true">❯</span> whoami
+        </p>
         <h1>
           Hi, I’m
           <br />
@@ -23,7 +25,15 @@ const Hero = () => {
         <HomeActions />
       </div>
       <aside className="profile-panel">
-        <div className="panel-titlebar"><span className="panel-dots" aria-hidden="true"><i /><i /><i /></span><span>developer.ts</span><span aria-hidden="true">{"{ }"}</span></div>
+        <div className="panel-titlebar">
+          <span className="panel-dots" aria-hidden="true">
+            <i />
+            <i />
+            <i />
+          </span>
+          <span>developer.ts</span>
+          <span aria-hidden="true">{"{ }"}</span>
+        </div>
         <span className="availability">● Open to internships & co-ops</span>
         <dl>
           <div>

@@ -10,7 +10,7 @@ const ProjectsPage = () => {
         title="Projects"
         description="Explore seven projects in AI, full-stack development, and algorithms."
       />
-      <SectionHeading label="PROJECTS/" title="Things I’ve built."/>
+      <SectionHeading label="PROJECTS/" title="Things I’ve built." />
       <ProjectGrid projects={projects} />
     </div>
   );

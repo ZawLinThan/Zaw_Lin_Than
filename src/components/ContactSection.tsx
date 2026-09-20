@@ -41,9 +41,7 @@ const ContactSection = () => {
         >
           LinkedIn <Arrow />
         </a>
-        <a href="/Zaw-Lin-Than-Resume.pdf" >
-          Download résumé ↓
-        </a>
+        <a href="/Zaw-Lin-Than-Resume.pdf">Download résumé ↓</a>
       </div>
     </section>
   );
