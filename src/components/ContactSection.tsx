@@ -1,9 +1,9 @@
+import SectionLabel from './SectionLabel'
 import Arrow from './Arrow'
 
 const ContactSection = () => {
   return <section id="opportunities" className="opportunities wrap">
-    <h1 className="section-label">
-      <span>06</span> LET’S CONNECT</h1>
+    <SectionLabel number="06">Let’s Connect</SectionLabel>
     <div className="opportunities-content">
       <div>
         <div className="availability">

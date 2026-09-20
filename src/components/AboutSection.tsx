@@ -1,7 +1,7 @@
+import SectionLabel from './SectionLabel'
 const AboutSection = () => {
   return <section id="about" className="about wrap section">
-    <h1 className="section-label">
-      <span>01</span> ABOUT ME</h1>
+    <SectionLabel number="01">About Me</SectionLabel>
     <div>
       {/* <h1>Learning how things think.<br />
         <span className="muted">Understanding how they connect.</span>

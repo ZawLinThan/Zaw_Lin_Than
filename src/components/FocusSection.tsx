@@ -1,9 +1,9 @@
+import SectionLabel from './SectionLabel'
 const FocusSection = () => {
   return <section id="focus" className="focus wrap section">
     <div className="section-heading">
       <div>
-        <h1 className="section-label">
-          <span>02</span> AREAS OF FOCUS</h1>
+        <SectionLabel number="02">Areas of Focus</SectionLabel>
         <h2>Two threads as connected concentration.</h2>
       </div>
     </div>

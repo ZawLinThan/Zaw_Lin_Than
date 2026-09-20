@@ -1,7 +1,7 @@
+import SectionLabel from './SectionLabel'
 const SkillsSection = () => {
   return <section id="skills" className="skills wrap section">
-    <h1 className="section-label">
-      <span>03</span> TOOLKIT</h1>
+    <SectionLabel number="03">Toolkit</SectionLabel>
     <h2>What I work with</h2>
     <div className="skill-grid">
       <div>
