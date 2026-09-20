@@ -5,7 +5,7 @@ const FocusSection = () => {
       <div className="section-heading">
         <div>
           <SectionLabel number="02">Areas of Focus</SectionLabel>
-          <h3>Two threads as connected concentration.</h3>
+          <h3>Two Threads as a Connected Concentration.</h3>
         </div>
       </div>
       <div className="focus-grid">

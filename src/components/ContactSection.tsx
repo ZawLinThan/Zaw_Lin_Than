@@ -34,7 +34,14 @@ const ContactSection = () => {
         >
           GitHub <Arrow />
         </a>
-        <a href="/Zaw-Lin-Than-Resume.pdf" download>
+        <a
+          href="https://www.linkedin.com/in/zaw-lin-than-88541b192"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn <Arrow />
+        </a>
+        <a href="/Zaw-Lin-Than-Resume.pdf" >
           Download résumé ↓
         </a>
       </div>

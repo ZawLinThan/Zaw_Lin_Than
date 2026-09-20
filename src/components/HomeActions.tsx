@@ -12,7 +12,6 @@ const HomeActions = () => {
         <a
           className="home-action home-action-resume"
           href="/Zaw-Lin-Than-Resume.pdf"
-          download
         >
           <span>Download résumé</span>
           <ActionIcon name="download" />

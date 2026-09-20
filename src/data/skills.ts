@@ -1,6 +1,5 @@
 export interface Skill {
   name: string;
-  proficiency: 1 | 2 | 3 | 4 | 5;
   icon?: string;
   symbol?: string;
 }
@@ -12,48 +11,58 @@ export const skillGroups: {
   {
     title: 'Programming Languages',
     skills: [
-      { name: 'Python', proficiency: 5, icon: 'python' },
-      { name: 'Java', proficiency: 4, icon: 'java' },
-      { name: 'C++', proficiency: 4, icon: 'cplusplus' },
-      { name: 'C', proficiency: 4, icon: 'c' },
-      { name: 'TypeScript', proficiency: 5, icon: 'typescript' },
-      { name: 'JavaScript', proficiency: 5, icon: 'javascript' },
-      { name: 'SQL', proficiency: 4, symbol: 'SQL' },
+      { name: 'Python', icon: 'python' },
+      { name: 'Java', icon: 'java' },
+      { name: 'C++', icon: 'cplusplus' },
+      { name: 'C', icon: 'c' },
+      { name: 'TypeScript', icon: 'typescript' },
+      { name: 'JavaScript', icon: 'javascript' },
+      { name: 'SQL', symbol: 'SQL' },
     ],
   },
   {
     title: 'Frontend',
     skills: [
-      { name: 'React', proficiency: 5, icon: 'react' },
-      { name: 'Next.js', proficiency: 4, icon: 'nextjs' },
-      { name: 'TanStack Query', proficiency: 4, symbol: '↻' },
-      { name: 'Zustand', proficiency: 4, symbol: '{ }' },
+      { name: 'React', icon: 'react' },
+      { name: 'Next.js', icon: 'nextjs' },
+      { name: 'TanStack Query', symbol: '↻' },
+      { name: 'Zustand', symbol: '{ }' },
+      { name: 'HTML5', icon: 'html5' },
+      { name: 'CSS Modules', icon: 'css3' },
+      { name: 'Tailwind CSS', icon: 'tailwindcss' },
+      { name: 'Material UI', icon: 'materialui' },
     ],
   },
   {
     title: 'Backend & Databases',
     skills: [
-      { name: 'Node.js', proficiency: 5, icon: 'nodejs' },
-      { name: 'Express', proficiency: 5, icon: 'express' },
-      { name: 'PostgreSQL', proficiency: 4, icon: 'postgresql' },
-      { name: 'Firebase', proficiency: 4, icon: 'firebase' },
-      { name: 'Drizzle ORM', proficiency: 4, symbol: '↗' },
+      { name: 'Node.js', icon: 'nodejs' },
+      { name: 'Express', icon: 'express' },
+      { name: 'REST API', symbol: '⇄' },
+      { name: 'PostgreSQL', icon: 'postgresql' },
+      { name: 'MySQL'}, 
+      { name: 'MongoDB', icon: 'mongodb' },
+      { name: 'Firebase', icon: 'firebase' },
+      { name: 'Supabase'},
+      { name: 'Drizzle ORM', symbol: '↗' },
     ],
   },
   {
     title: 'AI & Data',
     skills: [
-      { name: 'scikit-learn', proficiency: 4, icon: 'scikitlearn' },
-      { name: 'pandas', proficiency: 4, icon: 'pandas' },
-      { name: 'NumPy', proficiency: 4, icon: 'numpy' },
-      { name: 'Jupyter', proficiency: 4, symbol: '◉' },
-      { name: 'Matplotlib', proficiency: 4, symbol: '▥' },
+      { name: 'scikit-learn', icon: 'scikitlearn' },
+      { name: 'pandas', icon: 'pandas' },
+      { name: 'NumPy', icon: 'numpy' },
+      { name: 'Jupyter', symbol: '◉' },
+      { name: 'Matplotlib', symbol: '▥' },
     ],
   },
   {
     title: 'Developer Tools',
     skills: [
-      { name: 'Git', proficiency: 5, icon: 'git' },
+      { name: 'Git', icon: 'git' },
+      { name: 'Postman', icon: 'postman' },
+      { name: 'GitHub Actions', icon: 'githubactions' },
     ],
   },
 ];

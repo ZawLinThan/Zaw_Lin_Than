@@ -4,7 +4,6 @@ const Hero = () => {
   return (
     <section className="hero wrap">
       <div>
-        <p className="hero-kicker"><span aria-hidden="true">~/</span> ZAW LIN THAN · DEVELOPER PORTFOLIO</p>
         <p className="terminal-command"><span aria-hidden="true">❯</span> whoami</p>
         <h1>
           Hi, I’m
