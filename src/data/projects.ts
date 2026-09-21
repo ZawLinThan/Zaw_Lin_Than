@@ -4,6 +4,15 @@ import myCloudDashboard from "../assets/myCloud/dashboard_page.png";
 import myCloudFolders from "../assets/myCloud/folders_page.png";
 import myCloudPlan from "../assets/myCloud/plan_purchase.png";
 
+import bondSignIn from '../assets/bond/sign_in.png'
+import bondSignUp from "../assets/bond/sign_up.png"
+import bondHomePage from "../assets/bond/home_page.png"
+import bondExplorePage from '../assets/bond/explore_page.png'
+import bondBondsPage from '../assets/bond/bonds_page.png'
+import bondNotificationPage from '../assets/bond/notifications_page.png'
+import bondProfilePage from '../assets/bond/profile_page.png'
+import bondMobileView from "../assets/bond/mobile_view.png"
+
 import type { ProjectStatus } from "../components/StatusBadge";
 
 export interface Project {
@@ -105,7 +114,16 @@ export const projects: Project[] = [
       "Zustand",
       "Cloudflare R2",
     ],
-    screenshots: [],
+    screenshots: [
+      { src: bondSignIn, alt: "Bond sign-in page", caption: "Sign in" },
+      { src: bondSignUp, alt: "Bond sign-up page", caption: "Create an account" },
+      { src: bondHomePage, alt: "Bond home page", caption: "Home" },
+      { src: bondExplorePage, alt: "Bond explore page", caption: "Explore" },
+      { src: bondBondsPage, alt: "Bond connections page", caption: "Bonds" },
+      { src: bondNotificationPage, alt: "Bond notifications page", caption: "Notifications" },
+      { src: bondProfilePage, alt: "Bond profile page", caption: "Profile" },
+      { src: bondMobileView, alt: "Bond mobile view", caption: "Mobile View"}, 
+    ],
     websiteUrl: "https://bond-k7wq.onrender.com",
   },
   {
@@ -135,11 +153,12 @@ export const projects: Project[] = [
       {
         src: myCloudSignIn,
         alt: "myCloud sign-in page with email, password, and Google sign-in options",
+        caption: "Sign in",
       },
-      { src: myCloudSignUp, alt: "myCloud sign-up page" },
-      { src: myCloudDashboard, alt: "myCloud dashboard page" },
-      { src: myCloudFolders, alt: "myCloud folder page" },
-      { src: myCloudPlan, alt: "myCloud plan purchase page" },
+      { src: myCloudSignUp, alt: "myCloud sign-up page", caption: "Create an account" },
+      { src: myCloudDashboard, alt: "myCloud dashboard page", caption: "Dashboard" },
+      { src: myCloudFolders, alt: "myCloud folder page", caption: "Folders" },
+      { src: myCloudPlan, alt: "myCloud plan purchase page", caption: "Choose a storage plan" },
     ],
     websiteUrl: "https://mycloud-nine.vercel.app/",
   },
