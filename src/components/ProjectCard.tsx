@@ -18,7 +18,7 @@ const ProjectCard = ({
       aria-label={`View ${project.title} project`}
     >
       <div className="project-filebar">
-        <span aria-hidden="true">⌘</span>
+        <span aria-hidden="true">#</span>
         <span>{project.slug}</span>
         <span className="filebar-arrow" aria-hidden="true">
           ↗
