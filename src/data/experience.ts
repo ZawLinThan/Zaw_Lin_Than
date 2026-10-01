@@ -4,7 +4,7 @@ export const leadership = [
     title: "Project Manager",
     organization: "GT WebDev \u00b7 Georgia Tech",
     description:
-      "Leading a team of five on a full-stack AI Study Assistant project using retrieval-augmented generation.",
+      "Leading a team of 6 on a full-stack AI Study Assistant project using retrieval-augmented generation.",
   },
   {
     date: "FEB 2025 \u2014 JUN 2026",
