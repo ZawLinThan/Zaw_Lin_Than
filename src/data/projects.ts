@@ -56,6 +56,7 @@ export const projects: Project[] = [
       "BullMQ",
       "PostgreSQL",
       "Cloudflare R2",
+      "Sentry"
     ],
     screenshots: [],
     websiteUrl: null,

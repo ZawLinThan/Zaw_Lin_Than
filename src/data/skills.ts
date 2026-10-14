@@ -61,8 +61,10 @@ export const skillGroups: {
     title: "Developer Tools",
     skills: [
       { name: "Git", icon: "git" },
-      { name: "Postman", icon: "postman" },
       { name: "GitHub Actions", icon: "githubactions" },
+      { name: "Postman", icon: "postman" },
+      { name: "Jest", icon: "jest" },
+      { name: "Sentry", icon: "sentry" },
     ],
   },
 ];
