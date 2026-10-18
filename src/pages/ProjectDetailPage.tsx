@@ -65,7 +65,7 @@ const ProjectDetailPage = () => {
           </div>
         </aside>
       </div>
-      <ProjectGallery screenshots={project.screenshots} />
+      <ProjectGallery screenshots={project.screenshots} video={project.video} />
     </article>
   );
 };

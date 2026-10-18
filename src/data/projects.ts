@@ -26,6 +26,7 @@ export interface Project {
   highlights: string[];
   stack: string[];
   screenshots: { src: string; alt: string; caption?: string }[];
+  video?: { embedUrl: string; url: string; title: string };
   websiteUrl: string | null;
 }
 
@@ -87,6 +88,45 @@ export const projects: Project[] = [
       "PostgreSQL",
     ],
     screenshots: [],
+    websiteUrl: null,
+  },
+  {
+    slug: "xplain-it",
+    title: "Xplain-it",
+    category: "AI / Full stack",
+    date: "October 2026",
+    status: "Done",
+    summary:
+      "An AI-powered oral assessment platform that helps students demonstrate their understanding of submitted code.",
+    description:
+      "Built a full-stack platform that generates oral questions from submitted assignments, transcribes spoken answers, and provides rubric-based grading. Instructors review feedback, gaze-tracking events, and speaker consistency signals through a dedicated dashboard.",
+    highlights: [
+      "Integrated Groq LLMs, Whisper transcription, and ElevenLabs text-to-speech.",
+      "Implemented browser-local gaze tracking with MediaPipe and optional speaker consistency checks using SpeechBrain.",
+      "Validated AI responses with Pydantic and reduced redundant API calls through caching and batched grading.",
+    ],
+    stack: [
+      "TypeScript",
+      "React",
+      "Vite",
+      "Python",
+      "FastAPI",
+      "Pydantic",
+      "SQLite",
+      "Groq",
+      "Whisper",
+      "ElevenLabs",
+      "MediaPipe",
+      "SpeechBrain",
+      "PyTorch",
+    ],
+    screenshots: [],
+    video: {
+      embedUrl:
+        "https://drive.google.com/file/d/15ucpexZ5-55kvPLjl3iuzoVugleMOF8_/preview",
+      url: "https://drive.google.com/file/d/15ucpexZ5-55kvPLjl3iuzoVugleMOF8_/view",
+      title: "Xplain-it demo video",
+    },
     websiteUrl: null,
   },
   {

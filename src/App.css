@@ -428,6 +428,15 @@ main:focus {
   height: auto;
 }
 
+.project-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 6px;
+  background: #000;
+}
+
 .screenshot-gallery figcaption {
   color: var(--muted);
   font-size: 1rem;

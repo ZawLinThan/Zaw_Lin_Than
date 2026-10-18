@@ -21,10 +21,10 @@ try {
     );
   for (const [path, title] of [
     ["/", "Zaw Lin Than"],
-    ["/about", "Learning how things think."],
+    ["/about", "About"],
     ["/projects", "Things I’ve built."],
-    ["/experience", "Building with people."],
-    ["/contact", "Ready to learn."],
+    ["/experience", "Experience"],
+    ["/contact", "Contact"],
   ]) {
     assert.ok(render(path).includes(title), `${path} renders its page`);
   }
@@ -36,8 +36,20 @@ try {
     assert.ok(detail.includes(project.title));
     assert.ok(detail.includes(project.status));
     assert.ok(detail.includes("Technologies &amp; frameworks"));
-    assert.ok(detail.includes("Screenshots haven’t been added"));
-    assert.ok(detail.includes("A live website link hasn’t been added"));
+    if (!project.screenshots.length && !project.video) {
+      assert.ok(detail.includes("Screenshots haven’t been added"));
+    } else {
+      assert.ok(!detail.includes("Screenshots haven’t been added"));
+    }
+    if (project.video) {
+      assert.ok(detail.includes(`src="${project.video.embedUrl}"`));
+      assert.ok(detail.includes(`title="${project.video.title}"`));
+      assert.ok(detail.includes(`href="${project.video.url}"`));
+      assert.ok(detail.includes("allowFullScreen=\"\""));
+    }
+    if (!project.websiteUrl) {
+      assert.ok(detail.includes("A live website link hasn’t been added"));
+    }
   }
   assert.ok(render("/projects/unknown").includes("This page isn’t here."));
   assert.ok(render("/unknown").includes("This page isn’t here."));
@@ -55,7 +67,7 @@ try {
   assert.ok(populated.includes('alt="Study dashboard"'));
   assert.ok(populated.includes("Dashboard preview"));
   console.log(
-    "Verified 5 main pages, 7 project pages, 2 missing routes, and populated screenshot/website states.",
+    `Verified 5 main pages, ${projects.length} project pages, 2 missing routes, and populated screenshot/video/website states.`,
   );
 } finally {
   await server.close();
