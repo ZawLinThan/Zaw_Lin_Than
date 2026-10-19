@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ActionIcon from "./ActionIcon";
+import ResumeViewer from "./ResumeViewer";
 
 const HomeActions = () => {
   return (
@@ -9,13 +10,12 @@ const HomeActions = () => {
           <span>Explore my projects</span>
           <ActionIcon name="arrow" />
         </Link>
-        <a
+        <ResumeViewer
           className="home-action home-action-resume"
-          href="/Zaw-Lin-Than-Resume.pdf"
         >
-          <span>Download résumé</span>
-          <ActionIcon name="download" />
-        </a>
+          <span>View résumé</span>
+          <ActionIcon name="arrow" />
+        </ResumeViewer>
       </div>
       <div className="home-actions-social" aria-label="Social profiles">
         <a

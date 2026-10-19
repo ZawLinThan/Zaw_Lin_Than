@@ -92,7 +92,7 @@ export const projects: Project[] = [
   },
   {
     slug: "xplain-it",
-    title: "Xplain-it",
+    title: "Xplain-it  |  HackATL",
     category: "AI / Full stack",
     date: "October 2026",
     status: "Done",

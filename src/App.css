@@ -764,6 +764,7 @@ h1.section-label > span {
   gap: 12px;
 }
 
+
 .home-action {
   display: flex;
   align-items: center;
@@ -1618,4 +1619,88 @@ body {
 /* Keep the official gray Drizzle mark legible on its light icon tile. */
 .skill-symbol img[src="/skill-icons/drizzle.svg"] {
   filter: brightness(0.35);
+}
+
+.resume-trigger {
+  font: inherit;
+  cursor: pointer;
+}
+.resume-trigger:not(.home-action) {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+}
+.resume-dialog {
+  width: min(1000px, 94vw);
+  height: 90dvh;
+  max-width: 94vw;
+  max-height: 94dvh;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  overflow: hidden;
+}
+.resume-dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+.resume-dialog::backdrop {
+  background: #000b;
+}
+.resume-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.resume-toolbar h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.resume-toolbar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.resume-toolbar button {
+  font: inherit;
+  cursor: pointer;
+}
+.resume-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 7px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--ink);
+}
+.resume-icon-button .action-icon {
+  width: 18px;
+  height: 18px;
+}
+.resume-icon-button:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.resume-icon-button[aria-busy="true"] {
+  opacity: 0.5;
+  cursor: wait;
+}
+.resume-dialog iframe {
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  border: 0;
+  background: white;
 }

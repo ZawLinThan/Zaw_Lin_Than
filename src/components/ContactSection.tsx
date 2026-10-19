@@ -1,5 +1,6 @@
 import SectionLabel from "./SectionLabel";
 import Arrow from "./Arrow";
+import ResumeViewer from "./ResumeViewer";
 
 const ContactSection = () => {
   return (
@@ -41,7 +42,9 @@ const ContactSection = () => {
         >
           LinkedIn <Arrow />
         </a>
-        <a href="/Zaw-Lin-Than-Resume.pdf">Download résumé ↓</a>
+        <ResumeViewer>
+          View résumé ↗
+        </ResumeViewer>
       </div>
     </section>
   );
