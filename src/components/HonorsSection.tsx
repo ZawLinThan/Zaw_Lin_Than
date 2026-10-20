@@ -6,7 +6,7 @@ const HonorsSection = () => (
     <div className="honors">
       <ul>
         <li>
-          One of 6 Finalists among ~60 teams & received Honorable Mention {" "}
+          4th place among ~60 teams & received Honorable Mention {" "}
           <span> HackATL · October 2026</span>
         </li>
         <li>
